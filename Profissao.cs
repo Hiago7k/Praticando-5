@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+namespace Praticando_5;
 
-namespace Praticando_5
+abstract class Profissao
 {
-    internal class Profissao
+    protected Profissao(string titulo)
     {
+        Titulo = titulo;
     }
+
+    public string Titulo { get;  }
 }

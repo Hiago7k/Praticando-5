@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Praticando_5;
 
-namespace Praticando_5
+internal class Certificado 
 {
-    internal class Certificado
+    public Profissao Profissao;
+    public Certificado(Profissao profissao)
     {
+        Profissao = profissao;
     }
+    public void AdicionarCertificado()
+    {
+        Console.WriteLine($"Certificado emitido para : {Profissao.Titulo}");
+    }
+    
+
+
 }
